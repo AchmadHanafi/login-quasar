@@ -30,7 +30,6 @@
     </q-drawer>
 
     <q-page-container>
-      <Login />
       <router-view />
     </q-page-container>
   </q-layout>
@@ -39,7 +38,6 @@
 <script>
 import { defineComponent, ref } from "vue";
 import EssentialLink from "components/EssentialLink.vue";
-import Login from "components/Login.vue";
 
 const linksList = [
   {
@@ -91,7 +89,6 @@ export default defineComponent({
 
   components: {
     EssentialLink,
-    Login,
   },
 
   setup() {
